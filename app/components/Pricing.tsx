@@ -13,90 +13,53 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      style={{
-        padding: "5rem 2.5rem",
-        borderTop: "0.5px solid var(--border)",
-        borderBottom: "0.5px solid var(--border)",
-      }}
+      className="px-5 md:px-10 py-20 border-t border-b"
+      style={{ borderColor: "var(--border)" }}
     >
       <p
-        style={{
-          fontSize: "0.72rem",
-          letterSpacing: "0.18em",
-          textTransform: "uppercase",
-          color: "var(--gold)",
-          marginBottom: "1rem",
-        }}
+        className="text-xs tracking-widest uppercase mb-4"
+        style={{ color: "var(--gold)" }}
       >
         Pricing
       </p>
       <h2
-        style={{
-          fontFamily: "var(--font-playfair)",
-          fontSize: "clamp(1.8rem, 3vw, 2.6rem)",
-          lineHeight: 1.2,
-          marginBottom: "3rem",
-        }}
+        className="text-3xl md:text-4xl leading-tight mb-12"
+        style={{ fontFamily: "'Playfair Display', serif" }}
       >
         Simple, transparent pricing
       </h2>
 
       <div
-        className="pricing-card"
+        className="max-w-lg p-6 md:p-12"
         style={{
-          maxWidth: 540,
           border: "0.5px solid var(--border-gold)",
-          padding: "3rem",
           background: "var(--surface)",
         }}
       >
-        <div
-          style={{
-            textDecoration: "line-through",
-            color: "var(--text-faint)",
-            fontSize: "1.1rem",
-            marginBottom: "0.25rem",
-          }}
-        >
+        <div className="line-through text-lg mb-1" style={{ color: "var(--text-faint)" }}>
           £499
         </div>
         <div
-          style={{
-            fontFamily: "var(--font-playfair)",
-            fontSize: "3.8rem",
-            color: "var(--gold)",
-            lineHeight: 1,
-            marginBottom: "0.5rem",
-          }}
+          className="text-6xl leading-none mb-2"
+          style={{ fontFamily: "'Playfair Display', serif", color: "var(--gold)" }}
         >
           £249
         </div>
-        <p
-          style={{
-            color: "var(--text-muted)",
-            fontSize: "0.88rem",
-            marginBottom: "2rem",
-            letterSpacing: "0.03em",
-          }}
-        >
+        <p className="text-sm tracking-wide mb-8" style={{ color: "var(--text-muted)" }}>
           50% introductory offer · Pay via PayPal
         </p>
 
-        <ul style={{ listStyle: "none", marginBottom: "2.5rem" }}>
+        <ul className="list-none mb-10">
           {features.map((f) => (
             <li
               key={f}
+              className="flex gap-3 items-start py-2 text-sm border-b"
               style={{
-                padding: "0.65rem 0",
-                borderBottom: "0.5px solid rgba(232,228,216,0.07)",
-                fontSize: "0.9rem",
+                borderColor: "rgba(232,228,216,0.07)",
                 color: "rgba(232,228,216,0.68)",
-                display: "flex",
-                gap: "0.75rem",
-                alignItems: "flex-start",
               }}
             >
-              <span style={{ color: "var(--gold)", marginTop: "0.15rem", flexShrink: 0 }}>✦</span>
+              <span className="flex-shrink-0 mt-0.5" style={{ color: "var(--gold)" }}>✦</span>
               {f}
             </li>
           ))}
@@ -106,18 +69,8 @@ export default function Pricing() {
           href="https://wa.me/447404437994"
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-            background: "#25D366",
-            color: "#fff",
-            padding: "0.9rem 2.25rem",
-            fontSize: "0.92rem",
-            fontWeight: 500,
-            textDecoration: "none",
-            letterSpacing: "0.03em",
-          }}
+          className="inline-flex items-center gap-2 text-white text-sm font-medium tracking-wide px-8 py-3 no-underline"
+          style={{ background: "#25D366" }}
         >
           Message us to book →
         </a>

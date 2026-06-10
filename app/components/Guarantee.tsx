@@ -1,45 +1,28 @@
 export default function Guarantee() {
   return (
     <div
-      className="guarantee-box"
+      className="mx-4 md:mx-10 grid gap-8 p-8 md:p-12"
       style={{
-        margin: "0 2.5rem",
         background: "var(--surface)",
         border: "0.5px solid var(--border-gold)",
-        padding: "3rem 2.5rem",
-        display: "grid",
         gridTemplateColumns: "auto 1fr",
-        gap: "2rem",
-        alignItems: "start",
       }}
     >
       <div
-        style={{
-          width: 52,
-          height: 52,
-          border: "1px solid var(--gold)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: "var(--gold)",
-          fontSize: "1.5rem",
-          flexShrink: 0,
-        }}
+        className="w-12 h-12 flex items-center justify-center text-2xl flex-shrink-0"
+        style={{ border: "1px solid var(--gold)", color: "var(--gold)" }}
         aria-hidden
       >
         ✦
       </div>
       <div>
         <div
-          style={{
-            fontFamily: "var(--font-playfair)",
-            fontSize: "1.4rem",
-            marginBottom: "0.75rem",
-          }}
+          className="text-2xl mb-3"
+          style={{ fontFamily: "'Playfair Display', serif" }}
         >
           Our guarantee
         </div>
-        <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", maxWidth: 560 }}>
+        <p className="text-sm leading-relaxed max-w-lg" style={{ color: "var(--text-muted)" }}>
           We guarantee that you will finish the counselling session as a confident non-drinker.
           If for some reason you remain unconvinced, we will refund you in full.
         </p>
