@@ -50,3 +50,60 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ── Mobile ─────────────────────────────────────────────── */
+@media (max-width: 640px) {
+
+  /* Nav */
+  nav {
+    padding: 1rem 1.25rem;
+  }
+  .nav-phone {
+    display: none;
+  }
+  .nav-book-label {
+    display: none;
+  }
+
+  /* Hero: stack to single column */
+  .hero-section {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+  .hero-left {
+    padding: 3.5rem 1.5rem 2.5rem !important;
+    border-right: none !important;
+    border-bottom: 0.5px solid var(--border);
+  }
+  .hero-right {
+    padding: 2.5rem 1.5rem !important;
+    min-height: 220px;
+  }
+
+  /* Guarantee: remove side margins so it spans full width */
+  .guarantee-box {
+    margin: 0 !important;
+    padding: 2rem 1.5rem !important;
+  }
+
+  /* Pricing card: reduce padding */
+  .pricing-card {
+    padding: 2rem 1.25rem !important;
+  }
+
+  /* General section padding */
+  section {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem 1.25rem !important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer p {
+    text-align: left !important;
+  }
+}
