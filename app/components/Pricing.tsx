@@ -42,6 +42,7 @@ export default function Pricing() {
       </h2>
 
       <div
+        className="pricing-card"
         style={{
           maxWidth: 540,
           border: "0.5px solid var(--border-gold)",
@@ -81,12 +82,7 @@ export default function Pricing() {
           50% introductory offer · Pay via PayPal
         </p>
 
-        <ul
-          style={{
-            listStyle: "none",
-            marginBottom: "2.5rem",
-          }}
-        >
+        <ul style={{ listStyle: "none", marginBottom: "2.5rem" }}>
           {features.map((f) => (
             <li
               key={f}

@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
+      className="hero-section"
       style={{
         display: "grid",
         gridTemplateColumns: "1fr 1fr",
@@ -15,7 +16,7 @@ export default function Hero() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Dark overlay so text remains readable */}
+      {/* Dark overlay */}
       <div
         style={{
           position: "absolute",
@@ -24,8 +25,10 @@ export default function Hero() {
           zIndex: 0,
         }}
       />
+
       {/* Left */}
       <div
+        className="hero-left"
         style={{
           padding: "5rem 3.5rem 5rem 2.5rem",
           display: "flex",
@@ -68,7 +71,7 @@ export default function Hero() {
             fontSize: "1rem",
           }}
         >
-          Stop Now is a revolutionary new service. Our counselling session will allow you to stop drinking without difficulty - we work with you to change your beliefs about alcohol. This is a painless and easy way to be free of alcohol addiction, in one counselling session.
+          Stop Now is a revolutionary new service. Our counselling session will allow you to stop drinking without difficulty — we work with you to change your beliefs about alcohol. This is a painless and easy way to be free of alcohol addiction, in one counselling session.
         </p>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", alignItems: "center" }}>
           <a
@@ -99,6 +102,7 @@ export default function Hero() {
 
       {/* Right — client quote */}
       <div
+        className="hero-right"
         style={{
           display: "flex",
           alignItems: "center",
@@ -108,12 +112,7 @@ export default function Hero() {
           zIndex: 1,
         }}
       >
-        <blockquote
-          style={{
-            maxWidth: 380,
-            textAlign: "center",
-          }}
-        >
+        <blockquote style={{ maxWidth: 380, textAlign: "center" }}>
           <p
             style={{
               fontFamily: "var(--font-playfair)",
@@ -125,7 +124,7 @@ export default function Hero() {
               textShadow: "0 2px 12px rgba(0,0,0,0.4)",
             }}
           >
-            "The session was a revelation. I haven't drunk alcohol since then, and I don't miss it at all!" - Client
+            "The session was a revelation. I haven't drunk alcohol since then, and I don't miss it at all!" — Client
           </p>
         </blockquote>
       </div>
