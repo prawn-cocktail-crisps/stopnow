@@ -3,7 +3,7 @@ export default function Hero() {
     <section
       style={{
         display: "grid",
-        gridTemplateColumns: "1fr))",
+        gridTemplateColumns: "1fr",
         minHeight: "88vh",
         borderBottom: "0.5px solid var(--border)",
         position: "relative",
